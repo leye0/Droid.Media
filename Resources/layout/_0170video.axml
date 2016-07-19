@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:orientation="vertical"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:minWidth="25px"
+    a:minHeight="25px">
+    <TextView
+        style="@style/Title"
+        a:text="MediaRecorder"
+        a:paddingBottom="20px"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content" />
+    <TextView
+        a:text="Used to record audio and video. Simplest way to record media."
+        style="@style/MainFont"
+        a:paddingTop="12dp"
+        a:paddingBottom="12dp"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content" />
+    <Button
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:text="Record"
+        a:id="@+id/toggleVideo" />
+    <VideoView
+        a:id="@+id/videoView"
+        a:layout_width="100dp"
+        a:layout_height="100dp" />
+    <TextView
+        style="@style/Title"
+        a:text="ThumbnailUtils"
+        a:paddingBottom="20px"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content" />
+    <TextView
+        a:text="Thumbnail generation routines for media provider."
+        style="@style/MainFont"
+        a:paddingTop="12dp"
+        a:paddingBottom="12dp"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content" />
+    <LinearLayout
+        a:orientation="horizontal"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content">
+        <ImageView
+            a:id="@+id/thumbnailUtilsViewFull"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content" />
+        <ImageView
+            a:id="@+id/thumbnailUtilsViewMicro"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

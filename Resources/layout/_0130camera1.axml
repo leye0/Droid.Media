@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:orientation="vertical"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:minWidth="25px"
+    a:minHeight="25px">
+    <TextView
+        style="@style/Title"
+        a:text="TextureView"
+        a:paddingBottom="20px"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content" />
+    <TextView
+        a:text="Preview and Bitmap from Camera"
+        style="@style/MainFont"
+        a:paddingBottom="12dp"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content" />
+    <TextView
+        a:text="Let's use the TextureView to directly render the content of the camera to a view. A TextureView can be used to display a content stream. It behaves like a normal view."
+        style="@style/MainFont"
+        a:paddingBottom="12dp"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:orientation="vertical"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:minWidth="25px"
+    a:minHeight="25px">
+    <TextView
+        style="@style/Title"
+        a:text="ExifInterface"
+        a:paddingBottom="20px"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content" />
+    <TextView
+        a:text="Android.Media.ExifInterface  is a class for reading and writing Exif tags in a JPEG file or a RAW image file."
+        style="@style/MainFont"
+        a:paddingBottom="12dp"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content" />
+    <ImageView
+        a:id="@+id/exifImage"
+        a:layout_width="100dp"
+        a:layout_height="100dp" />
+    <EditText
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:id="@+id/tagName" />
+    <EditText
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:hint="Latitude"
+        a:id="@+id/latitude" />
+    <EditText
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:hint="Longitude"
+        a:id="@+id/longitude" />
+    <Button
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:text="Set Lat Lng"
+        a:id="@+id/setExifTags" />
+</LinearLayout>

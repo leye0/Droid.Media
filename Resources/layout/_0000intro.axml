@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:orientation="vertical"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:minWidth="25px"
+    a:minHeight="25px">
+    <TextView
+        style="@style/Title"
+        a:text="The Misc APIs"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content" />
+    <WebView
+        a:id="@+id/lol"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content" />
+</LinearLayout>

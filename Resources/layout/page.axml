@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent">
+    <LinearLayout
+        a:orientation="horizontal"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent">
+        <LinearLayout
+            a:orientation="vertical"
+            a:layout_width="wrap_content"
+            a:layout_height="match_parent"
+            a:paddingTop="8dp"
+            a:paddingLeft="6dp"
+            a:paddingRight="6dp"
+            a:id="@+id/namespaces"
+            a:background="#ffe2e2e2" />
+        <LinearLayout
+            a:orientation="vertical"
+            a:layout_width="match_parent"
+            a:layout_height="match_parent"
+            a:paddingTop="8dp"
+            a:paddingBottom="8dp"
+            a:paddingLeft="8dp"
+            a:paddingRight="8dp"
+            a:background="#ffffffff">
+            <TextView
+                a:text="Android.Media"
+                a:textAppearance="?android:attr/textAppearanceLarge"
+                a:layout_width="match_parent"
+                a:layout_height="wrap_content"
+                a:id="@+id/title"
+                a:textColor="#ff080808"
+                a:typeface="monospace" />
+            <LinearLayout
+                a:orientation="vertical"
+                a:layout_width="match_parent"
+                a:layout_height="match_parent"
+                a:id="@+id/tuto"
+                a:background="#ffffffff"
+                a:layout_weight="1" />
+            <LinearLayout
+                a:orientation="horizontal"
+                a:layout_width="match_parent"
+                a:layout_height="wrap_content">
+                <Button
+                    a:text="&lt;"
+                    a:layout_width="0px"
+                    a:layout_weight="0.4"
+                    a:layout_height="wrap_content"
+                    a:id="@+id/back" />
+                <LinearLayout
+                    a:orientation="vertical"
+                    a:layout_width="0px"
+                    a:layout_weight="0.2"
+                    a:layout_gravity="center"
+                    a:gravity="center"
+                    a:layout_height="wrap_content">
+                    <TextView
+                        a:text="1/20"
+                        a:gravity="center"
+                        a:layout_width="match_parent"
+                        a:layout_height="wrap_content"
+                        a:id="@+id/page" />
+                    <Button
+                        a:text="C#"
+                        a:textColor="@android:color/white"
+                        a:background="@android:color/holo_purple"
+                        a:gravity="center"
+                        a:textSize="15dp"
+                        a:layout_height="20dp"
+                        a:layout_width="match_parent"
+                        a:id="@+id/sourceButton" />
+                </LinearLayout>
+                <Button
+                    a:text="&gt;"
+                    a:layout_width="0px"
+                    a:layout_weight="0.4"
+                    a:layout_height="wrap_content"
+                    a:id="@+id/next" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <WebView
+        a:visibility="gone"
+        a:id="@+id/sourceBrowser"
+        a:layout_width="match_parent"
+        a:layout_height="match_parent" />
+</FrameLayout>

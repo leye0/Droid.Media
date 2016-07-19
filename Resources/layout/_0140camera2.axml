@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:orientation="vertical"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:minWidth="25px"
+    a:minHeight="25px">
+    <TextView
+        style="@style/Title"
+        a:text="FaceDetector"
+        a:paddingBottom="20px"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content" />
+    <TextView
+        a:text="Camera Preview"
+        style="@style/MainFont"
+        a:paddingBottom="12dp"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content" />
+    <FrameLayout
+        a:paddingBottom="12dp"
+        a:layout_width="100dp"
+        a:layout_height="100dp">
+        <TextureView
+            a:id="@+id/camera"
+            a:paddingBottom="12dp"
+            a:layout_width="100dp"
+            a:layout_height="100dp" />
+    </FrameLayout>
+    <TextView
+        a:text="Eyes from the faces can be continuously detected since the TextureView, as a normal view, exposes it's content as Bitmap. So a nice suit is added to the first detected face directly on a copied Bitmap."
+        style="@style/MainFont"
+        a:paddingBottom="12dp"
+        a:textSize="14dp"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content" />
+    <ImageView
+        a:id="@+id/faceResult"
+        a:layout_width="100dp"
+        a:layout_height="100dp" />
+</LinearLayout>

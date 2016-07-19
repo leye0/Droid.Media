@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:orientation="vertical"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:minWidth="25px"
+    a:minHeight="25px">
+    <TextView
+        style="@style/Title"
+        a:text="ToneGenerator"
+        a:paddingBottom="20px"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content" />
+    <TextView
+        a:text="This class provides methods to play DTMF tones (ITU-T Recommendation Q.23), call supervisory tones (3GPP TS 22.001, CEPT) and proprietary tones (3GPP TS 31.111). Depending on call state and routing options, tones are mixed to the downlink audio or output to the speaker phone or headset."
+        style="@style/MainFont"
+        a:textSize="15dp"
+        a:paddingTop="12dp"
+        a:paddingBottom="12dp"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content" />
+    <LinearLayout
+        a:orientation="horizontal"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content">
+        <Button
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:text="0"
+            a:id="@+id/tone1" />
+        <Button
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:text="1"
+            a:id="@+id/tone2" />
+        <Button
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:text="2"
+            a:id="@+id/tone3" />
+        <Button
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:text="3"
+            a:id="@+id/tone4" />
+    </LinearLayout>
+</LinearLayout>

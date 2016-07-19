@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:orientation="vertical"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:minWidth="25px"
+    a:minHeight="25px">
+    <TextView
+        a:text="What can I do with Android.Media?"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:textColor="@android:color/darker_gray"
+        a:textSize="22dp" />
+    <TextView
+        a:text="Some use cases may interest most of us:"
+        a:paddingTop="8dp"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:textSize="16dp"
+        a:paddingBottom="8dp"
+        style="@style/MainFont" />
+    <TextView
+        style="@style/ListItem"
+        a:text="• Recording and playing sound"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content" />
+    <TextView
+        style="@style/ListItem"
+        a:text="• Recording and playing video"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content" />
+    <TextView
+        style="@style/ListItem"
+        a:text="• Detecting the face and its features"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content" />
+    <TextView
+        style="@style/ListItem"
+        a:text="• Managing device sound"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content" />
+</LinearLayout>

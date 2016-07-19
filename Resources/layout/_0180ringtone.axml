@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:orientation="vertical"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:minWidth="25px"
+    a:minHeight="25px">
+    <TextView
+        style="@style/Title"
+        a:text="RingTone"
+        a:paddingBottom="20px"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content" />
+    <TextView
+        a:text="Ringtone provides a quick method for playing a ringtone, notification, or other similar types of sounds."
+        style="@style/MainFont"
+        a:paddingTop="12dp"
+        a:paddingBottom="12dp"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content" />
+    <Button
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:text="Notification!"
+        a:id="@+id/playNotification" />
+    <Button
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:text="Ringtone!"
+        a:id="@+id/playRingtone" />
+    <Button
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:text="Alarm!"
+        a:id="@+id/playAlarm" />
+    <Button
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:text="Shut up."
+        a:id="@+id/shutup" />
+</LinearLayout>

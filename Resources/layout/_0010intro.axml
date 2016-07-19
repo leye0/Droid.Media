@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:orientation="vertical"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:minWidth="25px"
+    a:minHeight="25px">
+    <TextView
+        a:text="The Misc APIs"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:textColor="@android:color/darker_gray"
+        a:textSize="22dp"
+        a:id="@+id/textView1" />
+    <TextView
+        a:text="Contains classes to play, record, modify, encode, decode, mux, sync, manage/tag, stream, preview, re-route or project media files on/between phones, telephones, televisions, remote controllers and any other possible physical platform."
+        a:paddingTop="8dp"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:id="@+id/textView1"
+        style="@style/MainFont" />
+</LinearLayout>
