@@ -108,8 +108,8 @@ namespace Droid.Media
 			Navigate(currentPage);
 		}
 
-		int lastPage = 20;
-		int currentPage = 20;
+		int lastPage = 24;
+		int currentPage = 24;
 
 		void Navigate (int page)
 		{
@@ -149,11 +149,11 @@ namespace Droid.Media
 				break;
 			case 7:
 				layoutId = Resource.Layout._0070audio2;
-				sourceCodeUrl = "";
+				sourceCodeUrl = "https://github.com/leye0/Droid.Media/blob/master/AudioRecordDemo.cs";
 				break;
 			case 8:
 				layoutId = Resource.Layout._0080audio3;
-				sourceCodeUrl = "";
+				sourceCodeUrl = "https://github.com/leye0/Droid.Media/blob/master/AudioTrackDemo.cs";
 				break;
 			case 9:
 				layoutId = Resource.Layout._0090audio4;
@@ -169,7 +169,7 @@ namespace Droid.Media
 				break;
 			case 12:
 				layoutId = Resource.Layout._0120audio7;
-				sourceCodeUrl = "";
+				sourceCodeUrl = "https://github.com/leye0/Droid.Media/blob/master/AudioTrackDemo.cs";
 				break;
 			case 13:
 				layoutId = Resource.Layout._0130camera1;
@@ -177,15 +177,15 @@ namespace Droid.Media
 				break;
 			case 14:
 				layoutId = Resource.Layout._0140camera2;
-				sourceCodeUrl = "";
+				sourceCodeUrl = "https://github.com/leye0/Droid.Media/blob/master/CameraAndFaceDetection.cs";
 				break;
 			case 15:
 				layoutId = Resource.Layout._0150camera3;
-				sourceCodeUrl = "";
+				sourceCodeUrl = "https://github.com/leye0/Droid.Media/blob/master/Exif.cs";
 				break;
 			case 16:
 				layoutId = Resource.Layout._0160jetplayer;
-				sourceCodeUrl = "";
+				sourceCodeUrl = "https://github.com/leye0/Droid.Media/blob/master/JetPlayer.cs";
 				break;
 			case 17:
 				layoutId = Resource.Layout._0170video;
@@ -209,15 +209,15 @@ namespace Droid.Media
 				break;
 			case 22:
 				layoutId = Resource.Layout._0220mediacodec;
-				sourceCodeUrl = "https://github.com/leye0/Droid.Media/blob/master/Drum.cs";
+				sourceCodeUrl = "https://github.com/leye0/Droid.Media/blob/master/GlVideoView.cs";
 				break;
 			case 23:
 				layoutId = Resource.Layout._0230conclusion;
-				sourceCodeUrl = "https://github.com/leye0/Droid.Media/blob/master/Drum.cs";
+				sourceCodeUrl = "";
 				break;
 			case 24:
 				layoutId = Resource.Layout._0240question;
-				sourceCodeUrl = "https://github.com/leye0/Droid.Media/blob/master/Drum.cs";
+				sourceCodeUrl = "";
 				break;
 			default:
 				currentPage = 0;
@@ -288,8 +288,12 @@ namespace Droid.Media
 				Hili (new [] { "ToneGenerator" });
 			}
 
-			if (currentPage >= 19 && currentPage <= 19) {
+			if (currentPage >= 20 && currentPage <= 21) {
 				Hili (new [] { "SoundPool" });
+			}
+
+			if (currentPage >= 22 && currentPage <= 22) {
+				Hili (new [] { "MediaCodec" });
 			}
 
 			// Page where we record a sound
@@ -299,12 +303,16 @@ namespace Droid.Media
 
 			// Page where we play the sound
 			if (currentPage == 8) {
-				var audioTrack = new AudioTrackDemo(this);
+				var audioTrack = new AudioTrackDemo(this, false);
 			}
 
-			// Page where we play the sound with FX
-			if (currentPage == 12) {
+			if (currentPage == 10) {
 				var audioTrack = new AudioTrackDemo(this, true);
+			}
+
+
+			if (currentPage == 12) {
+				var audioTrack = new AudioTrackDemo(this, false);
 			}
 
 			// Page where we capture the cam and face
@@ -338,6 +346,10 @@ namespace Droid.Media
 
 			if (currentPage == 21) {
 				var drumDemo = new Drum(this);
+			}
+
+			if (currentPage == 22) {
+				var mediaCodecDemo = new MediaCodecDemo(this);
 			}
 		}
 

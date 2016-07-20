@@ -7,34 +7,8 @@
     a:minHeight="25px">
     <TextView
         style="@style/Title"
-        a:text="AudioFX"
+        a:text="Skip me."
         a:paddingBottom="20px"
         a:layout_width="match_parent"
         a:layout_height="wrap_content" />
-    <TextView
-        a:text="I want to add an Equalizer effect to my sound"
-        style="@style/MainFont"
-        a:layout_width="match_parent"
-        a:layout_height="wrap_content" />
-    <TextView
-        a:text="Android.Media.AudioFX: Provides classes that manage audio effects implemented in the media framework."
-        a:paddingTop="16dp"
-        style="@style/MainFont"
-        a:layout_width="match_parent"
-        a:layout_height="wrap_content" />
-    <ScrollView
-        a:paddingTop="16dp"
-        a:layout_width="wrap_content"
-        a:layout_height="match_parent">
-        <LinearLayout
-            a:orientation="vertical"
-            a:layout_height="match_parent"
-            style="@style/CodeBlock">
-            <TextView
-                a:text="Blah put code it after Blah put code it after Blah put code it after Blah put code it after Blah put code it after Blah put code it after Blah put code it after Blah put code it after Blah put code it after Blah put code it after ut code it after Blah put code it after Blah put code it after Blah put code it after Blah put code it after Blah put code it after Blah put code it after Blah put code it after Blah put code it after Blah put code it afte"
-                style="@style/Code"
-                a:layout_width="match_parent"
-                a:layout_height="wrap_content" />
-        </LinearLayout>
-    </ScrollView>
 </LinearLayout>

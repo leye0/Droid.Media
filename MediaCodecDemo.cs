@@ -11,10 +11,10 @@ namespace Droid.Media
 			var videoView = activity.FindViewById<GlVideoView>(Resource.Id.myVideoView);
 			var movie = Android.OS.Environment.ExternalStorageDirectory + "/videoview-demo.mp4";
 
-			videoView.SetSource (movie);
-
 			activity.FindViewById<Button>(Resource.Id.playMediaCodec).Click += (sender, e) => 
 			{
+				videoView.Stop();
+				videoView.SetSource (movie);
 				videoView.Play();
 			};
 		}

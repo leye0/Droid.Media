@@ -19,6 +19,7 @@
     <Button
         a:text="Play"
         style="@style/MainFont"
+        a:visibility="gone"
         a:id="@+id/playButton"
         a:layout_width="match_parent"
         a:layout_height="wrap_content" />

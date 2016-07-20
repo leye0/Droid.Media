@@ -11,6 +11,13 @@
         a:paddingBottom="20px"
         a:layout_width="match_parent"
         a:layout_height="wrap_content" />
+    <TextView
+        style="@style/MainFont"
+        a:textSize="12dp"
+        a:text="In this demo, we are building a custom video player. We have access to pixels using GLES and we add an effect using a specific language GLSL (GL shading language)."
+        a:paddingBottom="20px"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content" />
     <Button
         a:layout_width="wrap_content"
         a:layout_height="wrap_content"

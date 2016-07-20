@@ -17,6 +17,7 @@ namespace Droid.Media
 	{
 		Button _playButton;
 		Button _playButton2;
+		Button _playButton3;
 
 		string _filePath = "";
 
@@ -30,11 +31,11 @@ namespace Droid.Media
 			}
 		}
 
-		bool hasFx = false;
+		bool withByteAccess = false;
 		public AudioTrackDemo (Activity activity, bool withEffect = false)
 		{
 			Activity = activity;
-			hasFx = withEffect;
+			withEffect = withEffect;
 
 			_playButton = Activity.FindViewById<Button> (Resource.Id.playButton);
 			_playButton.ViewDetachedFromWindow += (object sender, Android.Views.View.ViewDetachedFromWindowEventArgs e) => {
@@ -43,14 +44,19 @@ namespace Droid.Media
 		
 			_playButton2 = Activity.FindViewById<Button> (Resource.Id.playButton2);
 
+			_playButton.Click += _playButtonClick;
 
 			var dir = new Java.IO.File (Android.OS.Environment.ExternalStorageDirectory.AbsolutePath + "/DroidMediaTutorials/");
 			_filePath = dir.AbsolutePath + "/audioRecordDemo.pcm";
 
-			_playButton.Click += _playButtonClick;
-			if (withEffect) {
-				_playButton2.Click += _playButton2Click;
+			if (_playButton2 != null) {
+				if (withEffect) {
+					_playButton2.Click += _playButton3Click;
+				} else {
+					_playButton2.Click += _playButton2Click;
+				}
 			}
+
 		}
 
 		void _playButtonClick (object sender, EventArgs e)
@@ -58,7 +64,7 @@ namespace Droid.Media
 			var bytes = File.ReadAllBytes(_filePath);
 			Task.Run(() => {
 				var audioTrack = new AudioTrack(Android.Media.Stream.Music, 44100, ChannelOut.Stereo, Encoding.Default, 1024 * 20, AudioTrackMode.Stream);
-				if (hasFx) {
+				if (withByteAccess) {
 					SetFX(audioTrack);
 				}
 				audioTrack.Play();
@@ -81,7 +87,7 @@ namespace Droid.Media
 			}
 
 			var audioTrack = new AudioTrack(Android.Media.Stream.Music, 44100, ChannelOut.Stereo, Encoding.Default, 1024 * 20, AudioTrackMode.Stream);
-				if (hasFx) {
+				if (withByteAccess) {
 					SetFX(audioTrack);
 				}
 			Task.Run(() => {
@@ -92,9 +98,24 @@ namespace Droid.Media
 			});
 		}
 
-		void SetFX(AudioTrack audioTrack) {
-			var reverb = new EnvironmentalReverb(0, audioTrack.AudioSessionId);
-        	reverb.SetEnabled(true);
+		void _playButton3Click (object sender, EventArgs e)
+		{
+			var bytes = File.ReadAllBytes(_filePath);
+			Task.Run(() => {
+				var audioTrack = new AudioTrack(Android.Media.Stream.Music, 44100, ChannelOut.Stereo, Encoding.Default, 1024 * 20, AudioTrackMode.Stream);
+				SetFX(audioTrack);
+				audioTrack.Play();
+				audioTrack.Write(bytes, 0, bytes.Length);
+			});
+		}
+
+		void SetFX (AudioTrack audioTrack)
+		{
+			var reverb = new PresetReverb (0, 0);
+			reverb.Preset = PresetReverb.PresetLargehall;
+			reverb.SetEnabled (true);
+			audioTrack.AttachAuxEffect (reverb.Id);
+			audioTrack.SetAuxEffectSendLevel (1.0f);
 		}
 
 		// On exit

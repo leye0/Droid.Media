@@ -11,30 +11,15 @@
         a:paddingBottom="20px"
         a:layout_width="match_parent"
         a:layout_height="wrap_content" />
-    <TextView
-        a:text="What about audio effects?"
-        style="@style/MainFont"
+    <Button
+        a:text="Play"
+        a:visibility="gone"
+        a:id="@+id/playButton"
         a:layout_width="match_parent"
         a:layout_height="wrap_content" />
-    <TextView
-        a:text="Android.Media.AudioFX: Provides classes that manage audio effects implemented in the media framework."
-        a:paddingTop="16dp"
-        style="@style/MainFont"
+    <Button
+        a:text="Play"
+        a:id="@+id/playButton2"
         a:layout_width="match_parent"
         a:layout_height="wrap_content" />
-    <ScrollView
-        a:paddingTop="16dp"
-        a:layout_width="wrap_content"
-        a:layout_height="match_parent">
-        <LinearLayout
-            a:orientation="vertical"
-            a:layout_height="match_parent"
-            style="@style/CodeBlock">
-            <TextView
-                a:text="Blah put code it after Blah put code it after Blah put code it after Blah put code it after Blah put code it after Blah put code it after Blah put code it after Blah put code it after Blah put code it after Blah put code it after ut code it after Blah put code it after Blah put code it after Blah put code it after Blah put code it after Blah put code it after Blah put code it after Blah put code it after Blah put code it after Blah put code it afte"
-                style="@style/Code"
-                a:layout_width="match_parent"
-                a:layout_height="wrap_content" />
-        </LinearLayout>
-    </ScrollView>
 </LinearLayout>

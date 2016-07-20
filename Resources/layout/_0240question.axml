@@ -13,8 +13,8 @@
         a:layout_height="wrap_content" />
     <TextView
         style="@style/Title"
-        a:text="a"
-        a:textSize="220dp"
+        a:text="What When Why W[etc]?"
+        a:textSize="24dp"
         a:layout_width="wrap_content"
         a:layout_height="wrap_content" />
 </LinearLayout>

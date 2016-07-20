@@ -12,24 +12,10 @@
         a:layout_width="match_parent"
         a:layout_height="wrap_content" />
     <TextView
-        a:text="AudioRecord is a low level API to record audio, but it is still very simple to use. In its simplest form, the usage is as follow:"
+        a:text="AudioRecord is a low level API to record audio, but it is still very simple to use."
         style="@style/MainFont"
         a:layout_width="match_parent"
         a:layout_height="wrap_content"
         a:paddingBottom="20px"
         a:textColor="@android:color/darker_gray" />
-    <ScrollView
-        a:layout_width="wrap_content"
-        a:layout_height="match_parent">
-        <LinearLayout
-            a:orientation="vertical"
-            a:layout_height="match_parent"
-            style="@style/CodeBlock">
-            <TextView
-                a:text="Blah put code it after Blah put code it after Blah put code it after Blah put code it after Blah put code it after Blah put code it after Blah put code it after Blah put code it after Blah put code it after Blah put code it after ut code it after Blah put code it after Blah put code it after Blah put code it after Blah put code it after Blah put code it after Blah put code it after Blah put code it after Blah put code it after Blah put code it afte"
-                style="@style/Code"
-                a:layout_width="match_parent"
-                a:layout_height="wrap_content" />
-        </LinearLayout>
-    </ScrollView>
 </LinearLayout>

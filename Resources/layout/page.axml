@@ -59,6 +59,7 @@
                     <TextView
                         a:text="1/20"
                         a:gravity="center"
+                        a:textColor="@android:color/black"
                         a:layout_width="match_parent"
                         a:layout_height="wrap_content"
                         a:id="@+id/page" />
