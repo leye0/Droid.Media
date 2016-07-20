@@ -111,7 +111,7 @@ namespace Droid.Media
 
 		void SetFX (AudioTrack audioTrack)
 		{
-			var reverb = new PresetReverb (0, 0);
+			var reverb = new PresetReverb (0, audioTrack.AudioSessionId);
 			reverb.Preset = PresetReverb.PresetLargehall;
 			reverb.SetEnabled (true);
 			audioTrack.AttachAuxEffect (reverb.Id);

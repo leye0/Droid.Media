@@ -109,7 +109,7 @@ namespace Droid.Media
 		}
 
 		int lastPage = 24;
-		int currentPage = 24;
+		int currentPage = 0;
 
 		void Navigate (int page)
 		{
@@ -161,11 +161,11 @@ namespace Droid.Media
 				break;
 			case 10:
 				layoutId = Resource.Layout._0100audio5;
-				sourceCodeUrl = "";
+				sourceCodeUrl = "https://github.com/leye0/Droid.Media/blob/master/AudioTrackDemo.cs";
 				break;
 			case 11:
 				layoutId = Resource.Layout._0110audio6;
-				sourceCodeUrl = "";
+				sourceCodeUrl = "https://github.com/leye0/Droid.Media/blob/master/AudioTrackDemo.cs";
 				break;
 			case 12:
 				layoutId = Resource.Layout._0120audio7;
