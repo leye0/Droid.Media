@@ -1036,29 +1036,29 @@ namespace Droid.Media
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f0c004a
-			public const int action_bar = 2131492938;
+			// aapt resource value: 0x7f0c004c
+			public const int action_bar = 2131492940;
 			
 			// aapt resource value: 0x7f0c0001
 			public const int action_bar_activity_content = 2131492865;
 			
-			// aapt resource value: 0x7f0c0049
-			public const int action_bar_container = 2131492937;
+			// aapt resource value: 0x7f0c004b
+			public const int action_bar_container = 2131492939;
+			
+			// aapt resource value: 0x7f0c004f
+			public const int action_bar_overlay_layout = 2131492943;
+			
+			// aapt resource value: 0x7f0c004a
+			public const int action_bar_root = 2131492938;
+			
+			// aapt resource value: 0x7f0c0053
+			public const int action_bar_subtitle = 2131492947;
+			
+			// aapt resource value: 0x7f0c0052
+			public const int action_bar_title = 2131492946;
 			
 			// aapt resource value: 0x7f0c004d
-			public const int action_bar_overlay_layout = 2131492941;
-			
-			// aapt resource value: 0x7f0c0048
-			public const int action_bar_root = 2131492936;
-			
-			// aapt resource value: 0x7f0c0051
-			public const int action_bar_subtitle = 2131492945;
-			
-			// aapt resource value: 0x7f0c0050
-			public const int action_bar_title = 2131492944;
-			
-			// aapt resource value: 0x7f0c004b
-			public const int action_context_bar = 2131492939;
+			public const int action_context_bar = 2131492941;
 			
 			// aapt resource value: 0x7f0c0002
 			public const int action_menu_divider = 2131492866;
@@ -1066,11 +1066,11 @@ namespace Droid.Media
 			// aapt resource value: 0x7f0c0003
 			public const int action_menu_presenter = 2131492867;
 			
-			// aapt resource value: 0x7f0c0052
-			public const int action_mode_close_button = 2131492946;
+			// aapt resource value: 0x7f0c0054
+			public const int action_mode_close_button = 2131492948;
 			
-			// aapt resource value: 0x7f0c0053
-			public const int activity_chooser_view_content = 2131492947;
+			// aapt resource value: 0x7f0c0055
+			public const int activity_chooser_view_content = 2131492949;
 			
 			// aapt resource value: 0x7f0c000c
 			public const int adjust_height = 2131492876;
@@ -1084,8 +1084,8 @@ namespace Droid.Media
 			// aapt resource value: 0x7f0c0009
 			public const int auto = 2131492873;
 			
-			// aapt resource value: 0x7f0c006c
-			public const int back = 2131492972;
+			// aapt resource value: 0x7f0c006e
+			public const int back = 2131492974;
 			
 			// aapt resource value: 0x7f0c001f
 			public const int beginning = 2131492895;
@@ -1093,8 +1093,8 @@ namespace Droid.Media
 			// aapt resource value: 0x7f0c0029
 			public const int camera = 2131492905;
 			
-			// aapt resource value: 0x7f0c005b
-			public const int checkbox = 2131492955;
+			// aapt resource value: 0x7f0c005d
+			public const int checkbox = 2131492957;
 			
 			// aapt resource value: 0x7f0c0019
 			public const int collapseActionView = 2131492889;
@@ -1102,8 +1102,8 @@ namespace Droid.Media
 			// aapt resource value: 0x7f0c000a
 			public const int dark = 2131492874;
 			
-			// aapt resource value: 0x7f0c0056
-			public const int default_activity_button = 2131492950;
+			// aapt resource value: 0x7f0c0058
+			public const int default_activity_button = 2131492952;
 			
 			// aapt resource value: 0x7f0c001d
 			public const int dialog = 2131492893;
@@ -1117,8 +1117,8 @@ namespace Droid.Media
 			// aapt resource value: 0x7f0c0047
 			public const int drum = 2131492935;
 			
-			// aapt resource value: 0x7f0c005e
-			public const int edit_query = 2131492958;
+			// aapt resource value: 0x7f0c0060
+			public const int edit_query = 2131492960;
 			
 			// aapt resource value: 0x7f0c0020
 			public const int end = 2131492896;
@@ -1126,11 +1126,11 @@ namespace Droid.Media
 			// aapt resource value: 0x7f0c002b
 			public const int exifImage = 2131492907;
 			
-			// aapt resource value: 0x7f0c0054
-			public const int expand_activities_button = 2131492948;
+			// aapt resource value: 0x7f0c0056
+			public const int expand_activities_button = 2131492950;
 			
-			// aapt resource value: 0x7f0c005a
-			public const int expanded_menu = 2131492954;
+			// aapt resource value: 0x7f0c005c
+			public const int expanded_menu = 2131492956;
 			
 			// aapt resource value: 0x7f0c002a
 			public const int faceResult = 2131492906;
@@ -1141,8 +1141,8 @@ namespace Droid.Media
 			// aapt resource value: 0x7f0c0013
 			public const int homeAsUp = 2131492883;
 			
-			// aapt resource value: 0x7f0c0058
-			public const int icon = 2131492952;
+			// aapt resource value: 0x7f0c005a
+			public const int icon = 2131492954;
 			
 			// aapt resource value: 0x7f0c0006
 			public const int icon_only = 2131492870;
@@ -1150,8 +1150,8 @@ namespace Droid.Media
 			// aapt resource value: 0x7f0c001a
 			public const int ifRoom = 2131492890;
 			
-			// aapt resource value: 0x7f0c0055
-			public const int image = 2131492949;
+			// aapt resource value: 0x7f0c0057
+			public const int image = 2131492951;
 			
 			// aapt resource value: 0x7f0c0030
 			public const int jetPlayer = 2131492912;
@@ -1165,8 +1165,8 @@ namespace Droid.Media
 			// aapt resource value: 0x7f0c000f
 			public const int listMode = 2131492879;
 			
-			// aapt resource value: 0x7f0c0057
-			public const int list_item = 2131492951;
+			// aapt resource value: 0x7f0c0059
+			public const int list_item = 2131492953;
 			
 			// aapt resource value: 0x7f0c0026
 			public const int listenToIt = 2131492902;
@@ -1180,14 +1180,17 @@ namespace Droid.Media
 			// aapt resource value: 0x7f0c0021
 			public const int middle = 2131492897;
 			
-			// aapt resource value: 0x7f0c006a
-			public const int namespaces = 2131492970;
+			// aapt resource value: 0x7f0c0049
+			public const int myVideoView = 2131492937;
+			
+			// aapt resource value: 0x7f0c006c
+			public const int namespaces = 2131492972;
 			
 			// aapt resource value: 0x7f0c001b
 			public const int never = 2131492891;
 			
-			// aapt resource value: 0x7f0c006f
-			public const int next = 2131492975;
+			// aapt resource value: 0x7f0c0071
+			public const int next = 2131492977;
 			
 			// aapt resource value: 0x7f0c000e
 			public const int none = 2131492878;
@@ -1195,8 +1198,8 @@ namespace Droid.Media
 			// aapt resource value: 0x7f0c0010
 			public const int normal = 2131492880;
 			
-			// aapt resource value: 0x7f0c006d
-			public const int page = 2131492973;
+			// aapt resource value: 0x7f0c006f
+			public const int page = 2131492975;
 			
 			// aapt resource value: 0x7f0c0039
 			public const int playAlarm = 2131492921;
@@ -1209,6 +1212,9 @@ namespace Droid.Media
 			
 			// aapt resource value: 0x7f0c0031
 			public const int playJetContent = 2131492913;
+			
+			// aapt resource value: 0x7f0c0048
+			public const int playMediaCodec = 2131492936;
 			
 			// aapt resource value: 0x7f0c0032
 			public const int playMidiSong = 2131492914;
@@ -1225,8 +1231,8 @@ namespace Droid.Media
 			// aapt resource value: 0x7f0c0005
 			public const int progress_horizontal = 2131492869;
 			
-			// aapt resource value: 0x7f0c005d
-			public const int radio = 2131492957;
+			// aapt resource value: 0x7f0c005f
+			public const int radio = 2131492959;
 			
 			// aapt resource value: 0x7f0c0025
 			public const int recordButton = 2131492901;
@@ -1234,41 +1240,41 @@ namespace Droid.Media
 			// aapt resource value: 0x7f0c0024
 			public const int robotAnimation = 2131492900;
 			
-			// aapt resource value: 0x7f0c0060
-			public const int search_badge = 2131492960;
-			
-			// aapt resource value: 0x7f0c005f
-			public const int search_bar = 2131492959;
+			// aapt resource value: 0x7f0c0062
+			public const int search_badge = 2131492962;
 			
 			// aapt resource value: 0x7f0c0061
-			public const int search_button = 2131492961;
-			
-			// aapt resource value: 0x7f0c0066
-			public const int search_close_btn = 2131492966;
-			
-			// aapt resource value: 0x7f0c0062
-			public const int search_edit_frame = 2131492962;
-			
-			// aapt resource value: 0x7f0c0068
-			public const int search_go_btn = 2131492968;
+			public const int search_bar = 2131492961;
 			
 			// aapt resource value: 0x7f0c0063
-			public const int search_mag_icon = 2131492963;
+			public const int search_button = 2131492963;
+			
+			// aapt resource value: 0x7f0c0068
+			public const int search_close_btn = 2131492968;
 			
 			// aapt resource value: 0x7f0c0064
-			public const int search_plate = 2131492964;
+			public const int search_edit_frame = 2131492964;
+			
+			// aapt resource value: 0x7f0c006a
+			public const int search_go_btn = 2131492970;
 			
 			// aapt resource value: 0x7f0c0065
-			public const int search_src_text = 2131492965;
+			public const int search_mag_icon = 2131492965;
 			
-			// aapt resource value: 0x7f0c0069
-			public const int search_voice_btn = 2131492969;
+			// aapt resource value: 0x7f0c0066
+			public const int search_plate = 2131492966;
+			
+			// aapt resource value: 0x7f0c0067
+			public const int search_src_text = 2131492967;
+			
+			// aapt resource value: 0x7f0c006b
+			public const int search_voice_btn = 2131492971;
 			
 			// aapt resource value: 0x7f0c002f
 			public const int setExifTags = 2131492911;
 			
-			// aapt resource value: 0x7f0c005c
-			public const int shortcut = 2131492956;
+			// aapt resource value: 0x7f0c005e
+			public const int shortcut = 2131492958;
 			
 			// aapt resource value: 0x7f0c0014
 			public const int showCustom = 2131492884;
@@ -1282,14 +1288,14 @@ namespace Droid.Media
 			// aapt resource value: 0x7f0c003a
 			public const int shutup = 2131492922;
 			
-			// aapt resource value: 0x7f0c0071
-			public const int sourceBrowser = 2131492977;
+			// aapt resource value: 0x7f0c0073
+			public const int sourceBrowser = 2131492979;
+			
+			// aapt resource value: 0x7f0c0072
+			public const int sourceBrowserContainer = 2131492978;
 			
 			// aapt resource value: 0x7f0c0070
-			public const int sourceBrowserContainer = 2131492976;
-			
-			// aapt resource value: 0x7f0c006e
-			public const int sourceButton = 2131492974;
+			public const int sourceButton = 2131492976;
 			
 			// aapt resource value: 0x7f0c0044
 			public const int sp_a = 2131492932;
@@ -1315,14 +1321,14 @@ namespace Droid.Media
 			// aapt resource value: 0x7f0c0043
 			public const int sp_g = 2131492931;
 			
-			// aapt resource value: 0x7f0c004c
-			public const int split_action_bar = 2131492940;
+			// aapt resource value: 0x7f0c004e
+			public const int split_action_bar = 2131492942;
 			
 			// aapt resource value: 0x7f0c0007
 			public const int standard = 2131492871;
 			
-			// aapt resource value: 0x7f0c0067
-			public const int submit_area = 2131492967;
+			// aapt resource value: 0x7f0c0069
+			public const int submit_area = 2131492969;
 			
 			// aapt resource value: 0x7f0c0011
 			public const int tabMode = 2131492881;
@@ -1339,8 +1345,8 @@ namespace Droid.Media
 			// aapt resource value: 0x7f0c0036
 			public const int thumbnailUtilsViewMicro = 2131492918;
 			
-			// aapt resource value: 0x7f0c0059
-			public const int title = 2131492953;
+			// aapt resource value: 0x7f0c005b
+			public const int title = 2131492955;
 			
 			// aapt resource value: 0x7f0c0033
 			public const int toggleVideo = 2131492915;
@@ -1357,14 +1363,14 @@ namespace Droid.Media
 			// aapt resource value: 0x7f0c003e
 			public const int tone4 = 2131492926;
 			
-			// aapt resource value: 0x7f0c004e
-			public const int top_action_bar = 2131492942;
+			// aapt resource value: 0x7f0c0050
+			public const int top_action_bar = 2131492944;
 			
-			// aapt resource value: 0x7f0c006b
-			public const int tuto = 2131492971;
+			// aapt resource value: 0x7f0c006d
+			public const int tuto = 2131492973;
 			
-			// aapt resource value: 0x7f0c004f
-			public const int up = 2131492943;
+			// aapt resource value: 0x7f0c0051
+			public const int up = 2131492945;
 			
 			// aapt resource value: 0x7f0c0017
 			public const int useLogo = 2131492887;
@@ -1477,85 +1483,94 @@ namespace Droid.Media
 			public const int _0210drum = 2130968597;
 			
 			// aapt resource value: 0x7f040016
-			public const int abc_action_bar_decor = 2130968598;
+			public const int _0220mediacodec = 2130968598;
 			
 			// aapt resource value: 0x7f040017
-			public const int abc_action_bar_decor_include = 2130968599;
+			public const int _0230conclusion = 2130968599;
 			
 			// aapt resource value: 0x7f040018
-			public const int abc_action_bar_decor_overlay = 2130968600;
+			public const int _0240question = 2130968600;
 			
 			// aapt resource value: 0x7f040019
-			public const int abc_action_bar_home = 2130968601;
+			public const int abc_action_bar_decor = 2130968601;
 			
 			// aapt resource value: 0x7f04001a
-			public const int abc_action_bar_tab = 2130968602;
+			public const int abc_action_bar_decor_include = 2130968602;
 			
 			// aapt resource value: 0x7f04001b
-			public const int abc_action_bar_tabbar = 2130968603;
+			public const int abc_action_bar_decor_overlay = 2130968603;
 			
 			// aapt resource value: 0x7f04001c
-			public const int abc_action_bar_title_item = 2130968604;
+			public const int abc_action_bar_home = 2130968604;
 			
 			// aapt resource value: 0x7f04001d
-			public const int abc_action_bar_view_list_nav_layout = 2130968605;
+			public const int abc_action_bar_tab = 2130968605;
 			
 			// aapt resource value: 0x7f04001e
-			public const int abc_action_menu_item_layout = 2130968606;
+			public const int abc_action_bar_tabbar = 2130968606;
 			
 			// aapt resource value: 0x7f04001f
-			public const int abc_action_menu_layout = 2130968607;
+			public const int abc_action_bar_title_item = 2130968607;
 			
 			// aapt resource value: 0x7f040020
-			public const int abc_action_mode_bar = 2130968608;
+			public const int abc_action_bar_view_list_nav_layout = 2130968608;
 			
 			// aapt resource value: 0x7f040021
-			public const int abc_action_mode_close_item = 2130968609;
+			public const int abc_action_menu_item_layout = 2130968609;
 			
 			// aapt resource value: 0x7f040022
-			public const int abc_activity_chooser_view = 2130968610;
+			public const int abc_action_menu_layout = 2130968610;
 			
 			// aapt resource value: 0x7f040023
-			public const int abc_activity_chooser_view_include = 2130968611;
+			public const int abc_action_mode_bar = 2130968611;
 			
 			// aapt resource value: 0x7f040024
-			public const int abc_activity_chooser_view_list_item = 2130968612;
+			public const int abc_action_mode_close_item = 2130968612;
 			
 			// aapt resource value: 0x7f040025
-			public const int abc_expanded_menu_layout = 2130968613;
+			public const int abc_activity_chooser_view = 2130968613;
 			
 			// aapt resource value: 0x7f040026
-			public const int abc_list_menu_item_checkbox = 2130968614;
+			public const int abc_activity_chooser_view_include = 2130968614;
 			
 			// aapt resource value: 0x7f040027
-			public const int abc_list_menu_item_icon = 2130968615;
+			public const int abc_activity_chooser_view_list_item = 2130968615;
 			
 			// aapt resource value: 0x7f040028
-			public const int abc_list_menu_item_layout = 2130968616;
+			public const int abc_expanded_menu_layout = 2130968616;
 			
 			// aapt resource value: 0x7f040029
-			public const int abc_list_menu_item_radio = 2130968617;
+			public const int abc_list_menu_item_checkbox = 2130968617;
 			
 			// aapt resource value: 0x7f04002a
-			public const int abc_popup_menu_item_layout = 2130968618;
+			public const int abc_list_menu_item_icon = 2130968618;
 			
 			// aapt resource value: 0x7f04002b
-			public const int abc_search_dropdown_item_icons_2line = 2130968619;
+			public const int abc_list_menu_item_layout = 2130968619;
 			
 			// aapt resource value: 0x7f04002c
-			public const int abc_search_view = 2130968620;
+			public const int abc_list_menu_item_radio = 2130968620;
 			
 			// aapt resource value: 0x7f04002d
-			public const int abc_simple_decor = 2130968621;
+			public const int abc_popup_menu_item_layout = 2130968621;
 			
 			// aapt resource value: 0x7f04002e
-			public const int Main = 2130968622;
+			public const int abc_search_dropdown_item_icons_2line = 2130968622;
 			
 			// aapt resource value: 0x7f04002f
-			public const int page = 2130968623;
+			public const int abc_search_view = 2130968623;
 			
 			// aapt resource value: 0x7f040030
-			public const int support_simple_spinner_dropdown_item = 2130968624;
+			public const int abc_simple_decor = 2130968624;
+			
+			// aapt resource value: 0x7f040031
+			public const int Main = 2130968625;
+			
+			// aapt resource value: 0x7f040032
+			public const int page = 2130968626;
+			
+			// aapt resource value: 0x7f040033
+			public const int support_simple_spinner_dropdown_item = 2130968627;
 			
 			static Layout()
 			{

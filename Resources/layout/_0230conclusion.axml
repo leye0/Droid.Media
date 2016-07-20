@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:orientation="vertical"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:minWidth="25px"
+    a:minHeight="25px">
+    <TextView
+        style="@style/Title"
+        a:text="Conclusion"
+        a:paddingBottom="20px"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content" />
+    <TextView
+        style="@style/Title"
+        a:text="+"
+        a:textColor="@android:color/holo_green_dark"
+        a:textSize="60dp"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content" />
+    <TextView
+        style="@style/MainFont"
+        a:text="The Android.Media APIs are useful as it contains helpers that cover 99% of what we may need to do with video and sound."
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content" />
+    <TextView
+        style="@style/Title"
+        a:text="-"
+        a:textColor="@android:color/holo_red_dark"
+        a:textSize="60dp"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content" />
+    <TextView
+        style="@style/MainFont"
+        a:text="The most interesting part of Android.Media, MediaCodec, begins to be stable in API 23. Android exposes very engineered and powerful APIs for sound and video for a communication between the App, SurfaceFlinger and media content. Sadly, there is no fluent way yet to quickly build more advanced media processing and one need to constantly re-code the same helpers and their own library to achieve a specific goal. This is visible in advanced tutorials where whole classes have to be written."
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content" />
+</LinearLayout>

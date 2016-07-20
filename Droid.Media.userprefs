@@ -1,12 +1,13 @@
 ﻿<Properties StartupItem="Droid.Media.csproj" RefactoringSettings.EnableRefactorings="True">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.LOL" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="MainActivity.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.TA240007SF" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Drum.cs">
     <Files>
-      <File FileName="MainActivity.cs" Line="330" Column="4" />
-      <File FileName="ToneGenerator.cs" Line="1" Column="1" />
-      <File FileName="Resources/values/styles.xml" Line="1" Column="1" />
-      <File FileName="SoundPool.cs" Line="1" Column="1" />
-      <File FileName="CameraAndFaceDetection.cs" Line="62" Column="1" />
+      <File FileName="MediaRecorder.cs" Line="53" Column="4" />
+      <File FileName="JetPlayer.cs" Line="36" Column="38" />
+      <File FileName="CameraAndFaceDetection.cs" Line="36" Column="24" />
+      <File FileName="Drum.cs" Line="66" Column="15" />
+      <File FileName="MainActivity.cs" Line="325" Column="25" />
+      <File FileName="SoundPool.cs" Line="30" Column="33" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

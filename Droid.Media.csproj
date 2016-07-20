@@ -72,6 +72,8 @@
     <Compile Include="ToneGenerator.cs" />
     <Compile Include="SoundPool.cs" />
     <Compile Include="Drum.cs" />
+    <Compile Include="MediaCodecDemo.cs" />
+    <Compile Include="GlVideoView.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -139,6 +141,9 @@
     <AndroidResource Include="Resources\raw\drum_tom_low.WAV" />
     <AndroidResource Include="Resources\raw\drum_tom_med.WAV" />
     <AndroidResource Include="Resources\raw\drum_hihat.wav" />
+    <AndroidResource Include="Resources\layout\_0230conclusion.axml" />
+    <AndroidResource Include="Resources\layout\_0240question.axml" />
+    <AndroidResource Include="Resources\layout\_0220mediacodec.axml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />

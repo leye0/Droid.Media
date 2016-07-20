@@ -81,7 +81,9 @@ namespace Droid.Media
 				"RingtoneManager",
 
 				"ToneGenerator",
-				"SoundPool"
+				"SoundPool",
+
+				"MediaCodec"
 			};
 
 			for (var i = 0; i < strs.Length; i++) {
@@ -203,6 +205,18 @@ namespace Droid.Media
 				break;
 			case 21:
 				layoutId = Resource.Layout._0210drum;
+				sourceCodeUrl = "https://github.com/leye0/Droid.Media/blob/master/Drum.cs";
+				break;
+			case 22:
+				layoutId = Resource.Layout._0220mediacodec;
+				sourceCodeUrl = "https://github.com/leye0/Droid.Media/blob/master/Drum.cs";
+				break;
+			case 23:
+				layoutId = Resource.Layout._0230conclusion;
+				sourceCodeUrl = "https://github.com/leye0/Droid.Media/blob/master/Drum.cs";
+				break;
+			case 24:
+				layoutId = Resource.Layout._0240question;
 				sourceCodeUrl = "https://github.com/leye0/Droid.Media/blob/master/Drum.cs";
 				break;
 			default:
