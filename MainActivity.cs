@@ -20,6 +20,7 @@ namespace Droid.Media
 	public class MainActivity : Activity
 	{
 		private WebView _sourceBrowser;
+		private ScrollView _sourceBrowserContainer;
 		private Button _sourceButton;
 		protected override void OnCreate (Bundle savedInstanceState)
 		{
@@ -32,22 +33,25 @@ namespace Droid.Media
 			InitNavigation ();
 			_sourceButton = this.FindViewById<Button> (Resource.Id.sourceButton);
 			_sourceBrowser = this.FindViewById<WebView> (Resource.Id.sourceBrowser);
-
+			_sourceBrowser.VerticalScrollBarEnabled = true;
+			_sourceBrowser.HorizontalScrollBarEnabled = true;
+			_sourceBrowserContainer = this.FindViewById<ScrollView> (Resource.Id.sourceBrowserContainer);
 
 			_sourceButton.Click += (object sender, EventArgs e) => {
-				_sourceBrowser.Visibility = _sourceBrowser.Visibility == ViewStates.Gone ? ViewStates.Visible : ViewStates.Gone;
+				_sourceBrowserContainer.Visibility = _sourceBrowserContainer.Visibility == ViewStates.Gone ? ViewStates.Visible : ViewStates.Gone;
 				NavigateToSource ();
 			};
 
 			var _gestureDetector = new GestureDetector (this, new GestureListener ());
 
 			_gestureDetector.DoubleTap += (object sender, GestureDetector.DoubleTapEventArgs e) => {
-				_sourceBrowser.Visibility = ViewStates.Gone;
+				_sourceBrowserContainer.Visibility = ViewStates.Gone;
 			};
 
-			//apply touch to your view
+			
 			_sourceBrowser.Touch += (object sender, View.TouchEventArgs e) => {
 				_gestureDetector.OnTouchEvent (e.Event);
+				e.Handled = false;
 			};
 		}
 
@@ -115,73 +119,101 @@ namespace Droid.Media
 			switch (currentPage = page = page < 0 ? lastPage : page) {
 			case 0:
 				layoutId = Resource.Layout._0000intro;
+				sourceCodeUrl = "";
 				break;
 			case 1:
 				layoutId = Resource.Layout._0010intro;
+				sourceCodeUrl = "";
 				break;
 			case 2:
 				layoutId = Resource.Layout._0020intro;
+				sourceCodeUrl = "";
 				break;
 			case 3:
 				layoutId = Resource.Layout._0030intro;
+				sourceCodeUrl = "";
 				break;
 			case 4:
 				layoutId = Resource.Layout._0040intro;
+				sourceCodeUrl = "";
 				break;
 			case 5:
 				layoutId = Resource.Layout._0050intro;
+				sourceCodeUrl = "";
 				break;
 			case 6:
 				layoutId = Resource.Layout._0060audio1;
+				sourceCodeUrl = "";
 				break;
 			case 7:
 				layoutId = Resource.Layout._0070audio2;
+				sourceCodeUrl = "";
 				break;
 			case 8:
 				layoutId = Resource.Layout._0080audio3;
+				sourceCodeUrl = "";
 				break;
 			case 9:
 				layoutId = Resource.Layout._0090audio4;
+				sourceCodeUrl = "";
 				break;
 			case 10:
 				layoutId = Resource.Layout._0100audio5;
+				sourceCodeUrl = "";
 				break;
 			case 11:
 				layoutId = Resource.Layout._0110audio6;
+				sourceCodeUrl = "";
 				break;
 			case 12:
 				layoutId = Resource.Layout._0120audio7;
+				sourceCodeUrl = "";
 				break;
 			case 13:
 				layoutId = Resource.Layout._0130camera1;
+				sourceCodeUrl = "";
 				break;
 			case 14:
 				layoutId = Resource.Layout._0140camera2;
+				sourceCodeUrl = "";
 				break;
 			case 15:
 				layoutId = Resource.Layout._0150camera3;
+				sourceCodeUrl = "";
 				break;
 			case 16:
 				layoutId = Resource.Layout._0160jetplayer;
+				sourceCodeUrl = "";
 				break;
 			case 17:
 				layoutId = Resource.Layout._0170video;
+				sourceCodeUrl = "https://github.com/leye0/Droid.Media/blob/master/MediaRecorder.cs";
 				break;
 			case 18:
 				layoutId = Resource.Layout._0180ringtone;
+				sourceCodeUrl = "https://github.com/leye0/Droid.Media/blob/master/Ring.cs";
 				break;
 			case 19:
 				layoutId = Resource.Layout._0190tonegenerator;
+				sourceCodeUrl = "https://github.com/leye0/Droid.Media/blob/master/ToneGenerator.cs";
 				break;
 			case 20:
 				layoutId = Resource.Layout._0200soundpool;
+				sourceCodeUrl = "https://github.com/leye0/Droid.Media/blob/master/SoundPool.cs";
+				break;
+			case 21:
+				layoutId = Resource.Layout._0210drum;
+				sourceCodeUrl = "https://github.com/leye0/Droid.Media/blob/master/Drum.cs";
 				break;
 			default:
 				currentPage = 0;
+				sourceCodeUrl = "";
 				layoutId = Resource.Layout._0000intro;
 				break;
 			}
 
+
+			FindViewById<Button> (Resource.Id.sourceButton).Visibility = (sourceCodeUrl == "") ? ViewStates.Invisible : ViewStates.Visible; 
 			FindViewById<TextView> (Resource.Id.page).Text = (currentPage + 1).ToString () + "/" + (lastPage + 1).ToString ();
 			var inflater = LayoutInflater.From (this);
 			inflater.Inflate (layoutId, Tuto);
@@ -209,7 +241,7 @@ namespace Droid.Media
 		}
 
 		AudioRecordDemo _audioRecordDemo;
-		private string currentSource = "";
+		private string sourceCodeUrl = "";
 		async Task CustomStuff ()
 		{
 			// Page before starting the examples
@@ -289,14 +321,18 @@ namespace Droid.Media
 			if (currentPage == 20) {
 				var soundPoolDemo = new SoundPoolDemo(this);
 			}
+
+			if (currentPage == 21) {
+				var drumDemo = new Drum(this);
+			}
 		}
 
 		Dictionary<string, TextView> TextToNS = new Dictionary<string, TextView>();
 
-		LinearLayout _tuto;
-		LinearLayout Tuto {
+		ScrollView _tuto;
+		ScrollView Tuto {
 			get { 
-				return _tuto ?? (_tuto = FindViewById<LinearLayout>(Resource.Id.tuto));
+				return _tuto ?? (_tuto = FindViewById<ScrollView>(Resource.Id.tuto));
 			}
 		}
 
@@ -327,7 +363,7 @@ namespace Droid.Media
 
 		void NavigateToSource ()
 		{
-			_sourceBrowser.LoadUrl (currentSource);
+			_sourceBrowser.LoadUrl (sourceCodeUrl);
 		}
 
 		int Robot{ get{ return Resource.Drawable.robot; }}

@@ -27,6 +27,18 @@
     <Button
         a:layout_width="match_parent"
         a:layout_height="wrap_content"
-        a:text="Play Jet content"
+        a:text="Play JetContent (spoiler: will NOT work)"
         a:id="@+id/playJetContent" />
+    <TextView
+        a:text="As a bonus, let's play a good old midi file of Mario Bros using Android.Media.MediaPlayer."
+        style="@style/MainFont"
+        a:paddingTop="12dp"
+        a:paddingBottom="12dp"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content" />
+    <Button
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content"
+        a:text="Mario bros :P"
+        a:id="@+id/playMidiSong" />
 </LinearLayout>

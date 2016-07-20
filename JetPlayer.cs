@@ -11,6 +11,7 @@ namespace Droid.Media {
 
 		Activity _activity;
 	    Button _playJetContent;
+		Button _playMidiSong;
 
 		public JetPlayerDemo(Activity activity) {
 
@@ -23,6 +24,21 @@ namespace Droid.Media {
 			_playJetContent.Click += (object sender, EventArgs e) => 
 			{
 				jetPlayer.Play();
+			};
+
+			var mediaPlayer = new MediaPlayer();
+			_playMidiSong = _activity.FindViewById<Button>(Resource.Id.playMidiSong);
+			_playMidiSong.Click += (object sender, EventArgs e) => 
+			{
+				if (mediaPlayer.IsPlaying) {
+					mediaPlayer.Stop();
+					mediaPlayer.Dispose();
+					mediaPlayer = new MediaPlayer();
+				} else {
+					mediaPlayer = MediaPlayer.Create(activity, Resource.Raw.smb1);
+					mediaPlayer.Start();
+				}
+
 			};
 		}
     }

@@ -27,7 +27,7 @@ namespace Droid.Media {
 		{
 			_activity = activity;
 
-			_soundPool = new SoundPool(64, Stream.Music, 0);
+			_soundPool = new SoundPool(32, Stream.Music, 0);
 
 			c1 = _activity.FindViewById<Button>(Resource.Id.sp_c);
 			d1 = _activity.FindViewById<Button>(Resource.Id.sp_d);

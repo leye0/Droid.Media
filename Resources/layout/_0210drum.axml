@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:orientation="vertical"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:minWidth="25px"
+    a:minHeight="25px">
+    <TextView
+        style="@style/Title"
+        a:text="SoundPool"
+        a:paddingBottom="20px"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content" />
+    <ImageView
+        style="@style/Title"
+        a:src="@drawable/abobo"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content" />
+    <TextView
+        a:text="- hey bro ? can u code me a drum app u do it and i make millions. our investors are waitings bro. agree ?"
+        style="@style/MainFont"
+        a:textSize="10dp"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content" />
+    <ImageView
+        style="@style/Title"
+        a:src="@drawable/billylee"
+        a:layout_width="wrap_content"
+        a:layout_height="wrap_content" />
+    <TextView
+        a:text="- Yes, Mr. Abobo."
+        style="@style/MainFont"
+        a:textSize="10dp"
+        a:layout_width="match_parent"
+        a:layout_height="wrap_content" />
+    <ImageView
+        a:src="@drawable/drum"
+        a:id="@+id/drum"
+        a:layout_width="400px"
+        a:layout_height="459px" />
+</LinearLayout>

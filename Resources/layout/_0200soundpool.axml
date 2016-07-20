@@ -7,12 +7,12 @@
     a:minHeight="25px">
     <TextView
         style="@style/Title"
-        a:text="ToneGenerator"
+        a:text="SoundPool"
         a:paddingBottom="20px"
         a:layout_width="match_parent"
         a:layout_height="wrap_content" />
     <TextView
-        a:text="This class provides methods to play DTMF tones (ITU-T Recommendation Q.23), call supervisory tones (3GPP TS 22.001, CEPT) and proprietary tones (3GPP TS 31.111). Depending on call state and routing options, tones are mixed to the downlink audio or output to the speaker phone or headset."
+        a:text="Manages and plays audio resources for applications. A SoundPool is a collection of samples that can be loaded into memory from a resource inside the APK or from a file in the file system. "
         style="@style/MainFont"
         a:textSize="15dp"
         a:paddingTop="12dp"

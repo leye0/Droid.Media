@@ -71,6 +71,7 @@
     <Compile Include="Ring.cs" />
     <Compile Include="ToneGenerator.cs" />
     <Compile Include="SoundPool.cs" />
+    <Compile Include="Drum.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -121,7 +122,23 @@
     <AndroidResource Include="Resources\raw\g1.wav" />
     <AndroidResource Include="Resources\layout\_0200soundpool.axml" />
     <AndroidResource Include="Resources\layout\_0000intro.axml" />
-    <AndroidResource Include="Resources\raw\page0001.html" />
+    <AndroidResource Include="Resources\raw\smb1.mid" />
+    <AndroidResource Include="Resources\layout\_0210drum.axml" />
+    <AndroidResource Include="Resources\drawable\abobo.png" />
+    <AndroidResource Include="Resources\drawable\billylee.png" />
+    <AndroidResource Include="Resources\drawable\drum.jpg" />
+    <AndroidResource Include="Resources\raw\drum.jpg" />
+    <AndroidResource Include="Resources\raw\drum_crash.WAV" />
+    <AndroidResource Include="Resources\raw\drum_kick_flat.WAV" />
+    <AndroidResource Include="Resources\raw\drum_kick_gated.WAV" />
+    <AndroidResource Include="Resources\raw\drum_kick_low.WAV" />
+    <AndroidResource Include="Resources\raw\drum_ride.WAV" />
+    <AndroidResource Include="Resources\raw\drum_snare_rim.WAV" />
+    <AndroidResource Include="Resources\raw\drum_snare_slam.WAV" />
+    <AndroidResource Include="Resources\raw\drum_tom_hi.WAV" />
+    <AndroidResource Include="Resources\raw\drum_tom_low.WAV" />
+    <AndroidResource Include="Resources\raw\drum_tom_med.WAV" />
+    <AndroidResource Include="Resources\raw\drum_hihat.wav" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />

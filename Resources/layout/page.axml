@@ -32,7 +32,7 @@
                 a:id="@+id/title"
                 a:textColor="#ff080808"
                 a:typeface="monospace" />
-            <LinearLayout
+            <ScrollView
                 a:orientation="vertical"
                 a:layout_width="match_parent"
                 a:layout_height="match_parent"
@@ -81,9 +81,19 @@
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
-    <WebView
+    <ScrollView
+        a:id="@+id/sourceBrowserContainer"
         a:visibility="gone"
-        a:id="@+id/sourceBrowser"
         a:layout_width="match_parent"
-        a:layout_height="match_parent" />
+        a:layout_height="match_parent"
+        a:fillViewport="true">
+        <FrameLayout
+            a:layout_width="match_parent"
+            a:layout_height="wrap_content">
+            <WebView
+                a:id="@+id/sourceBrowser"
+                a:layout_width="match_parent"
+                a:layout_height="match_parent" />
+        </FrameLayout>
+    </ScrollView>
 </FrameLayout>
